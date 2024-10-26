@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #484651;
+    --secondary-color: #3d3d3d;
+    --accent-color: #4CAF50;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --background-light: #f5f5f5;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-item img {
+    max-height: 50px;
+}
+
+.navbar-link.has-text-white,
+.navbar-item {
+    color: var(--text-light) !important;
+}
+
+.navbar-dropdown {
+    border-top: 2px solid var(--accent-color);
+}
+
+.navbar-dropdown .navbar-item {
+    color: var(--text-dark) !important;
+}
+
+.navbar-dropdown .navbar-item:hover {
+    background-color: var(--background-light);
+    color: var(--accent-color) !important;
+}
+
+/* Botones */
+.button.is-primary {
+    background-color: var(--accent-color);
+    border-color: transparent;
+    transition: var(--transition);
+}
+
+.button.is-primary:hover {
+    background-color: #45a049;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-carousel .carousel-container {
+    display: flex;
+    height: 100%;
+}
+
+.hero-carousel .carousel-item {
+    flex: 0 0 100%;
+    height: 100%;
+}
+
+.hero-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slogan-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-light);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.slogan-overlay h1 {
+    font-size: 2.5rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.slogan-overlay p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Secciones */
+.section {
+    padding: 3rem 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Tarjetas de Servicios */
+.service-card {
+    transition: var(--transition);
+    height: 100%;
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.service-card .card-content {
+    padding: 1.5rem;
+}
+
+.service-card .title {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.service-card .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card .image img {
+    transition: var(--transition);
+}
+
+.service-card:hover .image img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 3rem 1.5rem;
+}
+
+.footer strong {
+    color: var(--text-light);
+}
+
+/* Formularios */
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.input, .textarea {
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    padding: 0.5rem;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.input:focus, .textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+/* Login Container */
+.login-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+}
+
+/* Utilidades */
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        background-color: var(--primary-color);
+    }
+
+    .slogan-overlay {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .slogan-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .slogan-overlay p {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}

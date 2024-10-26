@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixKey3D - Impresión 3D y Corte Láser</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <iframe src = "Header.html" width = "100%" height = "100px"></iframe>
+
+    <!-- Hero Section -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <img src="carru1.jpg" alt="Impresión 3D">
+                <img src="carru2.jpg" alt="Impresión 3D">
+                <img src="carru3.jpg" alt="Impresión 3D">
+            </div>
+        </div>
+        <div class="slogan-overlay">
+            <h1 class="title has-text-white">IMAGINA, DISEÑA Y CREA</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, expedita voluptatibus. Quam sunt maiores facilis ut laboriosam nihil quos accusantium, natus quo tempore eligendi exercitationem!</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered">Nuestros Servicios</h2>
+            <div class="columns is-multiline">
+                <!-- Servicio de Impresión 3D -->
+                <div class="column is-4">
+                    <div class="card service-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/api/placeholder/400/300" alt="Impresión 3D">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-4">Impresión 3D</h3>
+                                <p>Creamos tus diseños en 3D con alta calidad y precisión. Utilizamos diversos materiales según tus necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio de Corte Láser -->
+                <div class="column is-4">
+                    <div class="card service-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/api/placeholder/400/300" alt="Corte Láser">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-4">Corte Láser</h3>
+                                <p>Servicio de corte láser profesional para tus proyectos. Trabajamos con diferentes materiales y espesores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diseño Personalizado -->
+                <div class="column is-4">
+                    <div class="card service-card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/api/placeholder/400/300" alt="Diseño Personalizado">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-4">Diseño Personalizado</h3>
+                                <p>¿Tienes una idea? Nosotros la hacemos realidad. Servicio de diseño personalizado para tus proyectos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>PixKey3D</strong> - Servicios de Impresión 3D y Corte Láser
+                <br>
+                © 2024 Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar burger menu
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
