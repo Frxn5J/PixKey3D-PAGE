@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - PixKey3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <iframe src="Header.html" width="100%" height="100px"></iframe>
+
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <!-- Menú lateral -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            General
+                        </p>
+                        <ul class="menu-list">
+                            <li><a class="is-active">Dashboard</a></li>
+                            <li><a>Pedidos</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Gestión de Productos
+                        </p>
+                        <ul class="menu-list">
+                            <li><a>Materiales</a></li>
+                            <li><a>Impresoras</a></li>
+                            <li><a>Diseños</a></li>
+                            <li><a>Inventario</a></li>
+                        </ul>
+                        <p class="menu-label">
+                            Administración
+                        </p>
+                        <ul class="menu-list">
+                            <li><a>Usuarios</a></li>
+                            <li><a>Trabajadores</a></li>
+                            <li><a>Configuración</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <!-- Contenido principal -->
+                <div class="column is-9">
+                    <h1 class="title">Dashboard</h1>
+                    
+                    <!-- Estadísticas rápidas -->
+                    <div class="columns is-multiline">
+                        <div class="column is-3">
+                            <div class="box has-background-primary has-text-white">
+                                <p class="heading">Pedidos Hoy</p>
+                                <p class="title has-text-white">15</p>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="box has-background-link has-text-white">
+                                <p class="heading">Ingresos</p>
+                                <p class="title has-text-white">$2,500</p>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="box has-background-warning has-text-white">
+                                <p class="heading">Usuarios</p>
+                                <p class="title has-text-white">256</p>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="box has-background-success has-text-white">
+                                <p class="heading">Productos</p>
+                                <p class="title has-text-white">48</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tabla de últimos pedidos -->
+                    <div class="box">
+                        <h2 class="title is-4">Últimos Pedidos</h2>
+                        <table class="table is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Cliente</th>
+                                    <th>Producto</th>
+                                    <th>Estado</th>
+                                    <th>Total</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#001</td>
+                                    <td>Juan Pérez</td>
+                                    <td>Impresión 3D</td>
+                                    <td><span class="tag is-warning">Pendiente</span></td>
+                                    <td>$150.00</td>
+                                    <td>
+                                        <div class="buttons are-small">
+                                            <button class="button is-info">Ver</button>
+                                            <button class="button is-success">Actualizar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>PixKey3D</strong> - Servicios de Impresión 3D y Corte Láser
+                <br>
+                © 2024 Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

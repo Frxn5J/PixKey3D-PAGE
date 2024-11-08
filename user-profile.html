@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - PixKey3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <iframe src="Header.html" width="100%" height="100px"></iframe>
+
+    <!-- Profile Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <!-- Profile Sidebar -->
+                <div class="column is-3">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="has-text-centered mb-4">
+                                <figure class="image is-128x128 is-inline-block">
+                                    <img class="is-rounded" src="/api/placeholder/128/128" alt="Profile picture">
+                                </figure>
+                                <h2 class="title is-4 mt-2">Juan Pérez</h2>
+                                <p class="subtitle is-6">Cliente desde 2024</p>
+                            </div>
+                            <aside class="menu">
+                                <p class="menu-label">General</p>
+                                <ul class="menu-list">
+                                    <li><a class="is-active">Mi Perfil</a></li>
+                                    <li><a>Mis Pedidos</a></li>
+                                    <li><a>Direcciones</a></li>
+                                    <li><a>Métodos de Pago</a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Content -->
+                <div class="column is-9">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Información Personal
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <form>
+                                <div class="field">
+                                    <label class="label">Nombre Completo</label>
+                                    <div class="control">
+                                        <input class="input" type="text" value="Juan Pérez">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Email</label>
+                                    <div class="control">
+                                        <input class="input" type="email" value="juan@email.com">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Teléfono</label>
+                                    <div class="control">
+                                        <input class="input" type="tel" value="123-456-7890">
+                                    </div>
+                                </div>
+
+                                <div class="buttons">
+                                    <button class="button is-primary">Guardar Cambios</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Recent Orders -->
+                    <div class="card mt-4">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Pedidos Recientes
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="table-container">
+                                <table class="table is-fullwidth">
+                                    <thead>
+                                        <tr>
+                                            <th>Pedido #</th>
+                                            <th>Fecha</th>
+                                            <th>Estado</th>
+                                            <th>Total</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>001</td>
+                                            <td>01/11/2024</td>
+                                            <td><span class="tag is-success">Completado</span></td>
+                                            <td>$150.00</td>
+                                            <td><a class="button is-small">Ver Detalles</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>03/11/2024</td>
+                                            <td><span class="tag is-warning">En Proceso</span></td>
+                                            <td>$75.00</td>
+                                            <td><a class="button is-small">Ver Detalles</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>PixKey3D</strong> - Servicios de Impresión 3D y Corte Láser
+                <br>
+                © 2024 Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

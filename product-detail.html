@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto - PixKey3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <iframe src="Header.html" width="100%" height="100px"></iframe>
+
+    <!-- Product Detail Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <!-- Product Images -->
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/api/placeholder/800/600" alt="Producto">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns is-multiline">
+                                <div class="column is-3">
+                                    <figure class="image is-square">
+                                        <img src="/api/placeholder/200/200" alt="Thumbnail 1">
+                                    </figure>
+                                </div>
+                                <div class="column is-3">
+                                    <figure class="image is-square">
+                                        <img src="/api/placeholder/200/200" alt="Thumbnail 2">
+                                    </figure>
+                                </div>
+                                <div class="column is-3">
+                                    <figure class="image is-square">
+                                        <img src="/api/placeholder/200/200" alt="Thumbnail 3">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h1 class="title is-2">Nombre del Producto</h1>
+                            <p class="subtitle is-4">$299.99</p>
+
+                            <div class="content">
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                </p>
+
+                                <!-- Material Selection -->
+                                <div class="field">
+                                    <label class="label">Material</label>
+                                    <div class="control">
+                                        <div class="select is-fullwidth">
+                                            <select>
+                                                <option>PLA</option>
+                                                <option>ABS</option>
+                                                <option>PETG</option>
+                                                <option>TPU</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Color Selection -->
+                                <div class="field">
+                                    <label class="label">Color</label>
+                                    <div class="control">
+                                        <div class="select is-fullwidth">
+                                            <select>
+                                                <option>Negro</option>
+                                                <option>Blanco</option>
+                                                <option>Rojo</option>
+                                                <option>Azul</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dimensions -->
+                                <div class="field">
+                                    <label class="label">Dimensiones (mm)</label>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <input class="input" type="number" placeholder="Largo">
+                                        </div>
+                                        <div class="column">
+                                            <input class="input" type="number" placeholder="Ancho">
+                                        </div>
+                                        <div class="column">
+                                            <input class="input" type="number" placeholder="Alto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quantity -->
+                                <div class="field">
+                                    <label class="label">Cantidad</label>
+                                    <div class="control">
+                                        <input class="input" type="number" value="1" min="1">
+                                    </div>
+                                </div>
+
+                                <!-- Add to Cart Button -->
+                                <div class="field mt-5">
+                                    <div class="control">
+                                        <button class="button is-primary is-fullwidth">
+                                            <span class="icon">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </span>
+                                            <span>Agregar al Carrito</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Description Tabs -->
+            <div class="card mt-6">
+                <div class="card-content">
+                    <div class="tabs">
+                        <ul>
+                            <li class="is-active"><a>Descripción</a></li>
+                            <li><a>Especificaciones</a></li>
+                            <li><a>Reseñas</a></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <h4>Descripción del Producto</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <ul>
+                            <li>Característica 1</li>
+                            <li>Característica 2</li>
+                            <li>Característica 3</li>
+                            <li>Característica 4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>PixKey3D</strong> - Servicios de Impresión 3D y Corte Láser
+                <br>
+                © 2024 Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

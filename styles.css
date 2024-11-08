@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-item img {
-    max-height: 50px;
+    max-width: 100%;
 }
 
 .navbar-link.has-text-white,
@@ -238,4 +238,73 @@ body {
 
 .fade-in {
     animation: fadeIn 0.5s ease-out;
+}
+/* Estilos para el navbar-burger */
+.navbar-burger {
+    color: var(--text-light);
+    height: 3.25rem;
+    width: 3.25rem;
+}
+
+.navbar-burger span {
+    background-color: var(--text-light);
+}
+
+/* Estilos para el menú móvil */
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        display: none;
+        padding: 0;
+        background-color: var(--primary-color);
+    }
+
+    .navbar-menu.is-active {
+        display: block;
+    }
+
+    /* Ajustes para los dropdowns en móvil */
+    .navbar-item.has-dropdown {
+        padding: 0;
+    }
+
+    .navbar-dropdown {
+        background-color: var(--secondary-color);
+        border-top: none;
+        padding: 0;
+    }
+
+    .navbar-link:not(.is-arrowless)::after {
+        border-color: var(--text-light);
+    }
+
+    /* Ajustes para los botones en móvil */
+    .navbar-end .buttons {
+        padding: 0.5rem;
+        justify-content: center;
+    }
+
+    /* Asegurar que los items del navbar sean visibles */
+    .navbar-item, 
+    .navbar-link {
+        color: var(--text-light) !important;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Ajustar el espaciado de los dropdowns */
+    .navbar-dropdown .navbar-item {
+        padding-left: 2.5rem;
+    }
+}
+
+/* Estilos para el estado activo del burger */
+.navbar-burger.is-active span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.navbar-burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
 }

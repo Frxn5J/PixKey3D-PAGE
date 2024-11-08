@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - PixKey3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Carrito de Compras</h1>
+            
+            <div class="columns">
+                <div class="column is-8">
+                    <div class="box">
+                        <!-- Item del carrito -->
+                        <div class="columns is-vcentered">
+                            <div class="column is-2">
+                                <figure class="image is-96x96">
+                                    <img src="/api/placeholder/96/96" alt="Producto">
+                                </figure>
+                            </div>
+                            <div class="column is-4">
+                                <p class="title is-5">Impresión 3D - Prototipo</p>
+                                <p class="subtitle is-6">Material: PLA</p>
+                            </div>
+                            <div class="column is-2">
+                                <div class="field has-addons">
+                                    <p class="control">
+                                        <button class="button">-</button>
+                                    </p>
+                                    <p class="control">
+                                        <input class="input has-text-centered" type="number" value="1" min="1">
+                                    </p>
+                                    <p class="control">
+                                        <button class="button">+</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column is-2">
+                                <p class="title is-5">$150.00</p>
+                            </div>
+                            <div class="column is-2">
+                                <button class="button is-danger">
+                                    <span class="icon">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- Otro item del carrito -->
+                        <div class="columns is-vcentered">
+                            <div class="column is-2">
+                                <figure class="image is-96x96">
+                                    <img src="/api/placeholder/96/96" alt="Producto">
+                                </figure>
+                            </div>
+                            <div class="column is-4">
+                                <p class="title is-5">Corte Láser - Señalética</p>
+                                <p class="subtitle is-6">Material: Acrílico</p>
+                            </div>
+                            <div class="column is-2">
+                                <div class="field has-addons">
+                                    <p class="control">
+                                        <button class="button">-</button>
+                                    </p>
+                                    <p class="control">
+                                        <input class="input has-text-centered" type="number" value="2" min="1">
+                                    </p>
+                                    <p class="control">
+                                        <button class="button">+</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column is-2">
+                                <p class="title is-5">$200.00</p>
+                            </div>
+                            <div class="column is-2">
+                                <button class="button is-danger">
+                                    <span class="icon">
+                                        <i class="fas fa-trash"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="box">
+                        <h3 class="title is-4">Resumen del Pedido</h3>
+                        <div class="content">
+                            <div class="columns">
+                                <div class="column">Subtotal:</div>
+                                <div class="column has-text-right">$550.00</div>
+                            </div>
+                            <div class="columns">
+                                <div class="column">IVA (16%):</div>
+                                <div class="column has-text-right">$88.00</div>
+                            </div>
+                            <div class="columns">
+                                <div class="column">Total:</div>
+                                <div class="column has-text-right">$638.00</div>
+                            </div>
+                        </div>
+                        <button class="button is-primary is-fullwidth">Proceder al Pago</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Script para cargar header y footer -->
+    <script src="load_foo_head.js"></script>
+    <script>
+        // Lógica básica para incrementar o disminuir la cantidad de productos en el carrito
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.closest('.field').querySelector('input');
+                let value = parseInt(input.value);
+
+                if (this.textContent === '+') {
+                    value++;
+                } else if (this.textContent === '-' && value > 1) {
+                    value--;
+                }
+
+                input.value = value;
+            });
+        });
+    </script>
+</body>
+</html>

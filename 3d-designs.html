@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseños de Impresión 3D - PixKey3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Diseños de Impresión 3D</h1>
+            
+            <!-- Filtros -->
+            <div class="box">
+                <div class="columns">
+                    <div class="column is-3">
+                        <div class="field">
+                            <label class="label">Categoría</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select>
+                                        <option>Todas</option>
+                                        <option>Prototipos</option>
+                                        <option>Decoración</option>
+                                        <option>Juguetes</option>
+                                        <option>Funcionales</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="field">
+                            <label class="label">Material</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select>
+                                        <option>Todos</option>
+                                        <option>PLA</option>
+                                        <option>ABS</option>
+                                        <option>PETG</option>
+                                        <option>TPU</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="field">
+                            <label class="label">Ordenar por</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select>
+                                        <option>Más recientes</option>
+                                        <option>Precio: Menor a Mayor</option>
+                                        <option>Precio: Mayor a Menor</option>
+                                        <option>Popularidad</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3">
+                        <div class="field">
+                            <label class="label">&nbsp;</label>
+                            <div class="control">
+                                <button class="button is-primary is-fullwidth">
+                                    <span class="icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                    <span>Buscar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de diseños -->
+            <div class="columns is-multiline">
+                <!-- Diseño Card -->
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/api/placeholder/300/225" alt="Diseño Impresión 3D">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-5">Prototipo Robótico</p>
+                                    <p class="subtitle is-6">Material: PLA</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-6">$350.00 MXN</p>
+                                <button class="button is-primary is-fullwidth">
+                                    <span class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                    <span>Agregar al Carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Otro Diseño Card -->
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/api/placeholder/300/225" alt="Diseño Impresión 3D">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-5">Figura Decorativa</p>
+                                    <p class="subtitle is-6">Material: ABS</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-6">$200.00 MXN</p>
+                                <button class="button is-primary is-fullwidth">
+                                    <span class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                    <span>Agregar al Carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tercer Diseño Card -->
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/api/placeholder/300/225" alt="Diseño Impresión 3D">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-5">Juguete Modular</p>
+                                    <p class="subtitle is-6">Material: TPU</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-6">$450.00 MXN</p>
+                                <button class="button is-primary is-fullwidth">
+                                    <span class="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </span>
+                                    <span>Agregar al Carrito</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="load_foo_head.js"></script>
+
+</body>
+</html>

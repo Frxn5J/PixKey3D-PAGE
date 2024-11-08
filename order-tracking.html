@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Pedidos - PixKey3D</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Seguimiento de Pedidos</h1>
+            
+            <div class="table-container">
+                <table class="table is-fullwidth is-striped">
+                    <thead>
+                        <tr>
+                            <th>ID Pedido</th>
+                            <th>Fecha</th>
+                            <th>Producto</th>
+                            <th>Estado</th>
+                            <th>Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>2024-03-15</td>
+                            <td>Impresión 3D - Prototipo</td>
+                            <td>
+                                <span class="tag is-warning">En Proceso</span>
+                            </td>
+                            <td>
+                                <button class="button is-small is-info">Ver Detalles</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>2024-03-14</td>
+                            <td>Corte Láser - Señalética</td>
+                            <td>
+                                <span class="tag is-success">Completado</span>
+                            </td>
+                            <td>
+                                <button class="button is-small is-info">Ver Detalles</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal para detalles del pedido -->
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Detalles del Pedido #001</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <div class="content">
+                            <p><strong>Estado actual:</strong> En proceso de impresión</p>
+                            <p><strong>Fecha estimada de entrega:</strong> 2024-03-18</p>
+                            <p><strong>Especificaciones:</strong></p>
+                            <ul>
+                                <li>Material: PLA</li>
+                                <li>Color: Azul</li>
+                                <li>Dimensiones: 10x10x5 cm</li>
+                                <li>Cantidad: 1</li>
+                            </ul>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-marker is-success"></div>
+                                    <div class="timeline-content">
+                                        <p class="heading">15/03/2024 10:00</p>
+                                        <p>Pedido recibido</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker is-info"></div>
+                                    <div class="timeline-content">
+                                        <p class="heading">15/03/2024 14:30</p>
+                                        <p>En proceso de impresión</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <!-- Script para cargar header y footer -->
+    <script src="load_foo_head.js"></script>
+</body>
+</html>
