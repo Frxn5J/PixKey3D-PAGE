@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiales Disponibles - PixKey3D</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Materiales Disponibles</h1>
+            
+            <!-- Tabs para cambiar entre materiales de impresión 3D y corte láser -->
+            <div class="tabs is-centered is-boxed">
+                <ul>
+                    <li id="tab-3d" class="is-active" onclick="showSection('materials-3d', 'tab-3d')">
+                        <a>
+                            <span class="icon is-small"><i class="fas fa-cube"></i></span>
+                            <span>Impresión 3D</span>
+                        </a>
+                    </li>
+                    <li id="tab-laser" onclick="showSection('materials-laser', 'tab-laser')">
+                        <a>
+                            <span class="icon is-small"><i class="fas fa-cut"></i></span>
+                            <span>Corte Láser</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Materiales de Impresión 3D -->
+            <div id="materials-3d" class="materials-section">
+                <div class="columns is-multiline">
+                    <!-- PLA -->
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="/api/placeholder/128/128" alt="PLA">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h3 class="title is-4">PLA (Ácido Poliláctico)</h3>
+                                        <p>Material biodegradable ideal para uso decorativo y prototipos. Excelente calidad de impresión y amplia gama de colores.</p>
+                                        <div class="tags">
+                                            <span class="tag is-success">Eco-friendly</span>
+                                            <span class="tag is-info">Fácil de imprimir</span>
+                                            <span class="tag is-warning">Baja resistencia al calor</span>
+                                        </div>
+                                        <table class="table is-narrow">
+                                            <tr>
+                                                <th>Temperatura de impresión:</th>
+                                                <td>180-220°C</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Precio por kg:</th>
+                                                <td>$450 MXN</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="/api/placeholder/128/128" alt="ABS">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h3 class="title is-4">ABS (Acrilonitrilo Butadieno Estireno)</h3>
+                                        <p>Material resistente ideal para piezas funcionales y mecánicas. Alta resistencia al impacto y temperatura.</p>
+                                        <div class="tags">
+                                            <span class="tag is-danger">Requiere cámara cerrada</span>
+                                            <span class="tag is-info">Alta resistencia</span>
+                                            <span class="tag is-success">Durable</span>
+                                        </div>
+                                        <table class="table is-narrow">
+                                            <tr>
+                                                <th>Temperatura de impresión:</th>
+                                                <td>220-250°C</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Precio por kg:</th>
+                                                <td>$500 MXN</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="/api/placeholder/128/128" alt="PETG">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h3 class="title is-4">PETG</h3>
+                                        <p>Combina la facilidad de impresión del PLA con la durabilidad del ABS. Excelente para piezas funcionales y contenedores.</p>
+                                        <div class="tags">
+                                            <span class="tag is-info">Resistente al agua</span>
+                                            <span class="tag is-success">Buena adherencia</span>
+                                            <span class="tag is-warning">Flexible</span>
+                                        </div>
+                                        <table class="table is-narrow">
+                                            <tr>
+                                                <th>Temperatura de impresión:</th>
+                                                <td>230-250°C</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Precio por kg:</th>
+                                                <td>$550 MXN</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="/api/placeholder/128/128" alt="TPU">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h3 class="title is-4">TPU (Poliuretano Termoplástico)</h3>
+                                        <p>Material flexible ideal para piezas que requieren elasticidad. Perfecto para protecciones y componentes flexibles.</p>
+                                        <div class="tags">
+                                            <span class="tag is-info">Flexible</span>
+                                            <span class="tag is-warning">Impresión lenta</span>
+                                            <span class="tag is-success">Resistente</span>
+                                        </div>
+                                        <table class="table is-narrow">
+                                            <tr>
+                                                <th>Temperatura de impresión:</th>
+                                                <td>210-230°C</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Precio por kg:</th>
+                                                <td>$600 MXN</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Materiales de Corte Láser -->
+            <div id="materials-laser" class="materials-section" style="display: none;">
+                <div class="columns is-multiline">
+                    <!-- MDF -->
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="/api/placeholder/128/128" alt="MDF">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h3 class="title is-4">MDF</h3>
+                                        <p>Tablero de fibra de densidad media. Ideal para cortes detallados y piezas decorativas. Muy usado en maquetas y mobiliario ligero.</p>
+                                        <div class="tags">
+                                            <span class="tag is-info">Fácil de cortar</span>
+                                            <span class="tag is-success">Económico</span>
+                                            <span class="tag is-warning">No resistente al agua</span>
+                                        </div>
+                                        <table class="table is-narrow">
+                                            <tr>
+                                                <th>Espesor:</th>
+                                                <td>3 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Precio por lámina:</th>
+                                                <td>$80 MXN</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="/api/placeholder/128/128" alt="Triplay">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h3 class="title is-4">Triplay</h3>
+                                        <p>Material de madera laminada. Resistente y duradero, utilizado para muebles y estructuras que requieren más soporte.</p>
+                                        <div class="tags">
+                                            <span class="tag is-info">Resistente</span>
+                                            <span class="tag is-warning">Pesado</span>
+                                            <span class="tag is-success">Estable</span>
+                                        </div>
+                                        <table class="table is-narrow">
+                                            <tr>
+                                                <th>Espesor:</th>
+                                                <td>3 mm, 6 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Precio por hoja:</th>
+                                                <td>$250 MXN</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="column is-6">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img src="/api/placeholder/128/128" alt="Cartón">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <h3 class="title is-4">Cartón</h3>
+                                        <p>Material económico y ligero. Ideal para prototipos, maquetas y embalajes. Fácil de cortar y manipular.</p>
+                                        <div class="tags">
+                                            <span class="tag is-info">Económico</span>
+                                            <span class="tag is-success">Ligero</span>
+                                            <span class="tag is-warning">No duradero</span>
+                                        </div>
+                                        <table class="table is-narrow">
+                                            <tr>
+                                                <th>Espesor:</th>
+                                                <td>2 mm, 4 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Precio por hoja:</th>
+                                                <td>$50 MXN</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Script para cargar header y footer -->
+    <script src="load_foo_head.js"></script>
+
+    <!-- Script para alternar entre secciones -->
+    <script>
+        function showSection(sectionId, tabId) {
+            // Ocultar todas las secciones
+            document.getElementById('materials-3d').style.display = 'none';
+            document.getElementById('materials-laser').style.display = 'none';
+
+            // Remover clase 'is-active' de todas las pestañas
+            document.getElementById('tab-3d').classList.remove('is-active');
+            document.getElementById('tab-laser').classList.remove('is-active');
+
+            // Mostrar la sección seleccionada y activar la pestaña correspondiente
+            document.getElementById(sectionId).style.display = 'block';
+            document.getElementById(tabId).classList.add('is-active');
+        }
+    </script>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>
